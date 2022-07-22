@@ -34,7 +34,7 @@ app.get('/weather/today/:weatherId', (req, res) => {
             weather.push({
                 currentTemperature: currentTemp
             })
-            res.json(weather[0].currentTemperature)
+            res.json(weather)
             weather = []
         }).catch((err) => console.log(err))
     }).catch((err) => console.log(err))
